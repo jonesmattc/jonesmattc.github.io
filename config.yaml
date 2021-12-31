@@ -1,0 +1,42 @@
+baseURL: "https://blog.mattj.co/"   # Your domain name. Must end with "/"
+theme: "anubis"
+languageCode: "en-us"
+# disqusshortname: ""                     # https://gohugo.io/content-management/comments
+# googleAnalytics: ""                     # https://gohugo.io/templates/internal/#google-analytics
+
+menu:
+    main:
+    - identifier: blog
+      name: Blog
+      title: Blog
+      url: /blog/
+      weight: 0
+
+params:
+    author: "Matt Jones"
+    email: matt@mattj.co
+    dateFormat: "Jan 2, 2006"
+    style: auto
+    readMore: false
+    disableSummary: false
+
+    social:
+    - id: github
+      name: jonesmattc
+    - id: twitter
+      name: jonesmattsee
+    - id: instagram
+      name: jonesmattsee
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+  highlight:
+    codeFences: true
+    guessSyntax: false
+    hl_Lines: ""
+    lineNoStart: 1
+    lineNumbersInTable: true
+    style: solarized-dark # For styles, see https://xyproto.github.io/splash/docs/longer/all.html
+    tabWidth: 2
